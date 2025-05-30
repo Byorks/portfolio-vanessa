@@ -125,10 +125,10 @@ const BrandingSection = () => {
     mainImage: '/images/vox-1.webp',
     link: 'https://www.behance.net/gallery/219285967/BrandBook-Vox-Midia',
     galleryImages: [
-      './assets/images/vox-2.webp',
-      './assets/images/vox-3.webp',
-      './assets/images/vox-4.webp',
-      './assets/images/vox-5.png'
+      '/images/vox-2.webp',
+      '/images/vox-3.webp',
+      '/images/vox-4.webp',
+      '/images/vox-5.png'
     ]
   };
 
