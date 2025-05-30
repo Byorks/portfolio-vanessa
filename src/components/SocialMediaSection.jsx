@@ -108,21 +108,21 @@ const SocialMediaSection = () => {
       id: 1,
       title: 'Restaurante Steakya',
       description: 'Gerenciamento de redes sociais para restaurante especializado em carnes, com foco em fotografia de alimentos e promoções.',
-      image: './assets/images/logo-steakya.png',
+      image: '/images/logo-steakya.png',
       link: 'https://www.instagram.com/restaurante_steakya/'
     },
     {
       id: 2,
       title: 'Padaria Letícia Vila Madalena',
       description: 'Estratégia de conteúdo e gestão de mídia social para padaria artesanal, destacando produtos frescos e ambiente acolhedor.',
-      image: './assets/images/logo-leticia.png',
+      image: '/images/logo-leticia.png',
       link: 'https://www.instagram.com/padarialeticiavilamadalena/'
     },
     {
       id: 3,
       title: 'Congas GNV e Mecânica',
       description: 'Desenvolvimento de presença digital para oficina mecânica especializada em GNV, com foco em serviços técnicos e atendimento.',
-      image: './assets/images/logo-congas.png',
+      image: '/images/logo-congas.png',
       link: 'https://www.instagram.com/congas_gnvemecanica/'
     }
   ];

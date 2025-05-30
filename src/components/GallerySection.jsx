@@ -191,7 +191,7 @@ const GallerySection = () => {
       id: 1,
       title: 'Arms Fitness',
       category: 'Desenvolvimento Web',
-      image: 'src/assets/images/logo-arms.png',
+      image: '/images/logo-arms.png',
       link: 'https://www.armsfitness.com.br/',
       description: 'Site desenvolvido para academia com foco em serviços de personal trainer e planos de treinamento personalizados.'
     },
@@ -199,7 +199,7 @@ const GallerySection = () => {
       id: 2,
       title: 'GamificaTudo',
       category: 'Desenvolvimento Web',
-      image: 'src/assets/images/logo-gamificatudo.png',
+      image: '/images/logo-gamificatudo.png',
       link: 'https://byorks.github.io/Website-GamificaTudo/',
       description: 'Website de estudos sobre gamificação, apresentando conceitos e aplicações práticas em diferentes contextos.'
     },
@@ -207,7 +207,7 @@ const GallerySection = () => {
       id: 3,
       title: 'BrandBook Vox Midia',
       category: 'Branding',
-      image: 'src/assets/images/vox-1.webp',
+      image: '/images/vox-1.webp',
       link: 'https://www.behance.net/gallery/219285967/BrandBook-Vox-Midia',
       description: 'Desenvolvimento completo de identidade visual para a Vox Midia, incluindo logotipo, paleta de cores, tipografia e aplicações.'
     },
@@ -215,7 +215,7 @@ const GallerySection = () => {
       id: 4,
       title: 'Restaurante Steakya',
       category: 'Social Media',
-      image: 'src/assets/images/logo-steakya.png',
+      image: '/images/logo-steakya.png',
       link: 'https://www.instagram.com/restaurante_steakya/',
       description: 'Gerenciamento de redes sociais para restaurante especializado em carnes, com foco em fotografia de alimentos e promoções.'
     },
@@ -223,7 +223,7 @@ const GallerySection = () => {
       id: 5,
       title: 'Padaria Letícia',
       category: 'Social Media',
-      image: 'src/assets/images/logo-leticia.png',
+      image: '/images/logo-leticia.png',
       link: 'https://www.instagram.com/padarialeticiavilamadalena/',
       description: 'Estratégia de conteúdo e gestão de mídia social para padaria artesanal, destacando produtos frescos e ambiente acolhedor.'
     },
@@ -231,7 +231,7 @@ const GallerySection = () => {
       id: 6,
       title: 'Congas GNV',
       category: 'Social Media',
-      image: 'src/assets/images/logo-congas.png',
+      image: '/images/logo-congas.png',
       link: 'https://www.instagram.com/congas_gnvemecanica/',
       description: 'Desenvolvimento de presença digital para oficina mecânica especializada em GNV, com foco em serviços técnicos e atendimento.'
     }

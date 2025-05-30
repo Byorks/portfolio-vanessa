@@ -122,7 +122,7 @@ const BrandingSection = () => {
   const brandingProject = {
     title: 'BrandBook Vox Midia',
     description: 'Desenvolvimento completo de identidade visual para a Vox Midia, incluindo logotipo, paleta de cores, tipografia e aplicações. O projeto focou em transmitir modernidade e profissionalismo, alinhados com os valores da empresa de comunicação.',
-    mainImage: './assets/images/vox-1.webp',
+    mainImage: '/images/vox-1.webp',
     link: 'https://www.behance.net/gallery/219285967/BrandBook-Vox-Midia',
     galleryImages: [
       './assets/images/vox-2.webp',
