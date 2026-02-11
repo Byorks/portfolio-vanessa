@@ -139,8 +139,8 @@ const Hero = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.9, duration: 0.8 }}
           >
-            <CallToAction>Ver Portfólio</CallToAction>
-            <SecondaryButton>Contato</SecondaryButton>
+            {/* <CallToAction>Ver Portfólio</CallToAction> */}
+            <SecondaryButton><a href="#contato">Contato</a></SecondaryButton>
           </motion.div>
           
           <SocialIcons

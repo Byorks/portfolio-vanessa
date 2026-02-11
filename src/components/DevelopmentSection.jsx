@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import lineImg from '../assets/images/logo-linesync.png';
+import voxMidiaImg from '../assets/images/vox-1.webp';
 
 const SectionContainer = styled.section`
   padding: 6rem 0;
@@ -136,12 +138,32 @@ const DevelopmentSection = () => {
     {
       id: 2,
       title: 'GamificaTudo',
-      description: 'Website de estudos sobre gamificação, apresentando conceitos e aplicações práticas em diferentes contextos.',
+      description: 'Website sobre gamificação, apresentando conceitos e aplicações práticas em diferentes contextos.',
       image: 'https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80',
       link: 'https://byorks.github.io/Website-GamificaTudo/',
       github: 'https://github.com/Byorks/Website-GamificaTudo',
       tech: ['HTML', 'CSS', 'JavaScript', 'GitHub Pages']
-    }
+    },
+    {
+      id: 3,
+      title: 'LineSync',
+      description: 'Projeto desenvolvido em parceria com a Labware, focado no redesign da plataforma LineSync, com melhorias em integrações, arquitetura de interface e evolução da experiência do usuário (UI/UX).',
+      image: lineImg,
+      link: 'https://byorks.github.io/website-linesync/',
+      github: 'https://github.com/Byorks/website-linesync',
+      tech: ['HTML', 'CSS', 'JavaScript', 'TailwindCSS']
+    },
+ {
+  id: 3,
+  title: 'Vox Mídia – Website Institucional',
+  description:
+    'Website institucional desenvolvido para a agência Vox Mídia, destacando estratégia de marca, posicionamento e proposta de valor. O projeto focou em estruturação clara de conteúdo, hierarquia visual e experiência moderna, reforçando inovação, tecnologia e consultoria multimídia.',
+  image: voxMidiaImg, 
+  link: 'https://website-vox-midia.vercel.app/',
+  github: 'https://github.com/Byorks/Website-Vox-Midia',
+  tech: ['React', 'TailwindCSS','HTML', 'CSS', 'JavaScript']
+}
+
   ];
 
   const containerVariants = {

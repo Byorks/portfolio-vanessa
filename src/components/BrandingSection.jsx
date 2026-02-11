@@ -1,21 +1,25 @@
-import React from 'react';
-import styled from 'styled-components';
-import { motion } from 'framer-motion';
-import { FaBehance, FaExternalLinkAlt } from 'react-icons/fa';
+import React from "react";
+import styled from "styled-components";
+import { motion } from "framer-motion";
+import { FaBehance, FaExternalLinkAlt } from "react-icons/fa";
 
 const SectionContainer = styled.section`
   padding: 6rem 0;
   background-color: var(--color-background);
   position: relative;
-  
+
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle at center, rgba(138, 43, 226, 0.05), transparent 70%);
+    background: radial-gradient(
+      circle at center,
+      rgba(138, 43, 226, 0.05),
+      transparent 70%
+    );
     z-index: 0;
   }
 `;
@@ -47,7 +51,7 @@ const BrandingProject = styled(motion.div)`
 const ProjectHeader = styled.div`
   display: flex;
   flex-direction: column;
-  
+
   @media (min-width: 768px) {
     flex-direction: row;
   }
@@ -56,10 +60,10 @@ const ProjectHeader = styled.div`
 const ProjectImage = styled.div`
   height: 300px;
   flex: 1;
-  background-image: ${props => `url(${props.bg})`};
+  background-image: ${(props) => `url(${props.bg})`};
   background-size: cover;
   background-position: center;
-  
+
   @media (min-width: 768px) {
     min-width: 50%;
   }
@@ -89,7 +93,7 @@ const ProjectLink = styled.a`
   gap: 0.5rem;
   font-size: 1rem;
   margin-top: 1rem;
-  
+
   svg {
     font-size: 1.2rem;
   }
@@ -107,39 +111,55 @@ const GalleryItem = styled(motion.div)`
   height: 180px;
   border-radius: 8px;
   overflow: hidden;
-  background-image: ${props => `url(${props.bg})`};
+  background-image: ${(props) => `url(${props.bg})`};
   background-size: cover;
   background-position: center;
-  cursor: pointer;
+  // cursor: pointer;
   transition: transform 0.3s ease;
-  
+
   &:hover {
     transform: scale(1.05);
   }
 `;
 
 const BrandingSection = () => {
-  const brandingProject = {
-    title: 'BrandBook Vox Midia',
-    description: 'Desenvolvimento completo de identidade visual para a Vox Midia, incluindo logotipo, paleta de cores, tipografia e aplicações. O projeto focou em transmitir modernidade e profissionalismo, alinhados com os valores da empresa de comunicação.',
-    mainImage: '/images/vox-1.webp',
-    link: 'https://www.behance.net/gallery/219285967/BrandBook-Vox-Midia',
-    galleryImages: [
-      '/images/vox-2.webp',
-      '/images/vox-3.webp',
-      '/images/vox-4.webp',
-      '/images/vox-5.png'
-    ]
-  };
+  const brandingProjects = [
+    {
+      title: "BrandBook Vox Midia",
+      description:
+        "Desenvolvimento completo de identidade visual para a Vox Midia, incluindo logotipo, paleta de cores, tipografia e aplicações. O projeto focou em transmitir modernidade e profissionalismo, alinhados com os valores da empresa de comunicação.",
+      mainImage: "/images/vox-1.webp",
+      link: "https://www.behance.net/gallery/219285967/BrandBook-Vox-Midia",
+      galleryImages: [
+        "/images/vox-2.webp",
+        "/images/vox-3.webp",
+        "/images/vox-4.webp",
+        "/images/vox-5.png",
+      ],
+    },
+    {
+      title: "BrandBook Oh My Pet!",
+      description:
+        "Desenvolvimento completo de identidade visual para a Oh My Pet!, organização voltada à adoção responsável de animais resgatados. O projeto incluiu criação de logotipo, definição de paleta de cores, tipografia e aplicações da marca, com foco em transmitir acolhimento, cuidado, amor e compromisso com o bem-estar animal.",
+      mainImage: "/images/omp-1.png",
+      link: "",
+      galleryImages: [
+        "/images/omp-2.png",
+        "/images/omp-3.png",
+        "/images/omp-4.png",
+        "/images/omp-5.png",
+      ],
+    },
+  ];
 
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.2
-      }
-    }
+        staggerChildren: 0.2,
+      },
+    },
   };
 
   const itemVariants = {
@@ -149,9 +169,9 @@ const BrandingSection = () => {
       opacity: 1,
       transition: {
         duration: 0.6,
-        ease: "easeOut"
-      }
-    }
+        ease: "easeOut",
+      },
+    },
   };
 
   return (
@@ -165,52 +185,59 @@ const BrandingSection = () => {
         >
           Branding
         </SectionTitle>
-        
+
         <motion.p
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          Criação de identidade visual e estratégia de marca para empresas que buscam se destacar no mercado.
-          Desenvolvimento de elementos visuais que transmitem os valores e a personalidade da marca.
+          Criação de identidade visual e estratégia de marca para empresas que
+          buscam se destacar no mercado. Desenvolvimento de elementos visuais
+          que transmitem os valores e a personalidade da marca.
         </motion.p>
-        
+
         <BrandingShowcase>
-          <BrandingProject
-            as={motion.div}
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-            <ProjectHeader>
-              <ProjectImage bg={brandingProject.mainImage} />
-              <ProjectInfo>
-                <ProjectTitle>{brandingProject.title}</ProjectTitle>
-                <ProjectDescription>{brandingProject.description}</ProjectDescription>
-                <ProjectLink href={brandingProject.link} target="_blank" rel="noopener noreferrer">
-                  <FaBehance /> Ver no Behance
-                </ProjectLink>
-              </ProjectInfo>
-            </ProjectHeader>
-            
-            <GalleryGrid
+          {brandingProjects.map((project, i) => (
+            <BrandingProject
               as={motion.div}
-              variants={containerVariants}
-              initial="hidden"
-              whileInView="visible"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
             >
-              {brandingProject.galleryImages.map((image, index) => (
-                <GalleryItem 
-                  key={index} 
-                  bg={image}
-                  variants={itemVariants}
-                />
-              ))}
-            </GalleryGrid>
-          </BrandingProject>
+              <ProjectHeader>
+                <ProjectImage bg={project.mainImage} />
+                <ProjectInfo>
+                  <ProjectTitle>{project.title}</ProjectTitle>
+                  <ProjectDescription>{project.description}</ProjectDescription>
+                  {project.link ? (
+                    <ProjectLink
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FaBehance /> Ver no Behance
+                    </ProjectLink>
+                  ) : (
+                    ""
+                  )}
+                </ProjectInfo>
+              </ProjectHeader>
+
+              <GalleryGrid
+                as={motion.div}
+                variants={containerVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+              >
+                {project.galleryImages.map((image, index) => (
+                  <GalleryItem key={index} bg={image} variants={itemVariants} />
+                ))}
+              </GalleryGrid>
+            </BrandingProject>
+          ))}
         </BrandingShowcase>
       </SectionContent>
     </SectionContainer>

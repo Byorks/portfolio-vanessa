@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import { FaGamepad, FaCode, FaGraduationCap, FaVolleyballBall, FaBook } from 'react-icons/fa';
+import { FaGamepad, FaCode, FaGraduationCap, FaVolleyballBall, FaBook, FaBookOpen } from 'react-icons/fa';
 import { GiKimono } from 'react-icons/gi';
 
 const SectionContainer = styled.section`
@@ -118,11 +118,12 @@ const InterestName = styled.p`
 const AboutSection = () => {
   const interests = [
     { name: 'Programação', icon: <FaCode /> },
+    { name: 'Leitura', icon: <FaBookOpen /> },
     { name: 'Jogos Digitais', icon: <FaGamepad /> },
     { name: 'Desenho', icon: <FaBook /> },
     { name: 'Vôlei', icon: <FaVolleyballBall /> },
     { name: 'Multimídia', icon: <FaGraduationCap /> },
-    { name: 'Jiu-jitsu', icon: <GiKimono /> }
+    { name: 'Jiu-jitsu', icon: <GiKimono /> },
   ];
 
   const containerVariants = {
@@ -166,23 +167,14 @@ const AboutSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <AboutParagraph>
-              Adoro conhecer mais sobre programação e artes em jogos digitais, meu foco tem sido C#.
-            </AboutParagraph>
-            
-            <AboutParagraph>
-              Atualmente estou cursando Multimídia e concluí um curso de Fundamentos em C# também no SENAI, 
-              gosto bastante de ambos e graças a esse conhecimento me identifiquei com a área.
-            </AboutParagraph>
-            
-            <AboutParagraph>
-              Meu atual objetivo é me aprofundar na parte de programação e atuar na área.
-            </AboutParagraph>
-            
-            <AboutParagraph>
-              No tempo livre, gosto de desenhar, ler, praticar vôlei e jogar videogames competitivos e narrativos. 
-              Recentemente, comecei a praticar jiu-jitsu, melhorando minha disciplina e resistência.
-            </AboutParagraph>
+
+            <AboutParagraph>Sou desenvolvedora com foco em front-end e base em C#, apaixonada por transformar ideias em interfaces funcionais, organizadas e com boa experiência de uso. Atuei em projetos reais no SENAI e em desenvolvimentos mentorados por empresas, trabalhando com React, JavaScript, HTML, CSS, Tailwind e integração de dados dinâmicos.</AboutParagraph>
+
+            <AboutParagraph>Sou técnica em Multimídia, o que fortaleceu minha visão sobre UI, identidade visual e usabilidade, unindo estética e código de forma estratégica.</AboutParagraph>
+
+            <AboutParagraph>Gosto de aprender constantemente e evoluir tecnicamente, buscando construir soluções cada vez mais bem estruturadas e escaláveis.</AboutParagraph>
+
+            <AboutParagraph>Fora do código, sou apaixonada por artes, leitura e jogos digitais. Pratico esportes como vôlei e jiu-jitsu, que fortalecem minha disciplina, constância e foco em evolução contínua.</AboutParagraph>
             
             <AboutParagraph>
               Como pode ver, gosto bem variado, mas me empenho em todos.

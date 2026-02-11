@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import { FaEnvelope, FaGithub, FaInstagram, FaBehance } from 'react-icons/fa';
+import { FaEnvelope, FaGithub, FaInstagram, FaBehance, FaLinkedinIn } from 'react-icons/fa';
 
 const SectionContainer = styled.section`
   padding: 6rem 0;
@@ -216,10 +216,10 @@ const ContactSection = () => {
               <SocialLink href="https://github.com/Byorks" target="_blank" rel="noopener noreferrer">
                 <FaGithub />
               </SocialLink>
-              <SocialLink href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-                <FaInstagram />
+              <SocialLink href="https://www.linkedin.com/in/vanessa-byork/" target="_blank" rel="noopener noreferrer">
+                <FaLinkedinIn />
               </SocialLink>
-              <SocialLink href="https://www.behance.net/gallery/219285967/BrandBook-Vox-Midia" target="_blank" rel="noopener noreferrer">
+              <SocialLink href="https://www.behance.net/vanessafpinto" target="_blank" rel="noopener noreferrer">
                 <FaBehance />
               </SocialLink>
               <SocialLink href="mailto:vanessabyorkwing@gmail.com" target="_blank" rel="noopener noreferrer">
