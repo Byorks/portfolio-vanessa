@@ -129,7 +129,7 @@ const DevelopmentSection = () => {
     {
       id: 1,
       title: 'Arms Fitness',
-      description: 'Site desenvolvido para academia com foco em serviços de personal trainer e planos de treinamento personalizados.',
+      description: 'Projeto de landing page desenvolvido para a Arms Moda Fitness, abrangendo desde a prototipação no Figma até a implementação e publicação, com foco em responsividade, estruturação de conteúdo e promoção estratégica dos produtos da marca.',
       image: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80',
       link: 'https://www.armsfitness.com.br/',
       github: null,
